@@ -1,6 +1,14 @@
 #include "Pet.h"
 using namespace std;
 
+// Destructor (added by Garret)
+Pet::~Pet() {}
+
+// Define default (added by Garret)
+void Pet::makeSound() const {
+    std::cout << name << " makes an undefined sound.\n";
+}
+
 // Default constructor
 Pet::Pet() : name("Unnamed"), species("Unknown"), age(0), hungerLevel(5) {}
 

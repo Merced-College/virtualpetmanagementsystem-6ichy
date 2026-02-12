@@ -1,10 +1,15 @@
 #include <iostream>
 #include "Pet.h"
+#include "Dog.h"
+#include "Cat.h"
+#include "Banshee.h"
+
 using namespace std;
 
 int main() {
     Pet pet1("Rex", "Dog", 3, 6);
     Pet pet2("Whiskers", "Cat", 2, 4);
+    Banshee pet3("Caoineag", "Black", 1, 5);
 
     cout << "Pet 1 Info:\n";
     pet1.printInfo();

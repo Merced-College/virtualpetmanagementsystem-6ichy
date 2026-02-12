@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 
-using namespace std
+using namespace std;
 
 class Pet {
 private:
@@ -17,6 +17,9 @@ public:
     // Constructors
     Pet();
     Pet(const string& name, const string& species, int age, int hungerLevel);
+
+    // Deconstructors added by Garret
+    virtual ~Pet(); // added by Garret
 
     // Accessors (Getters)
     string getName() const;
@@ -35,6 +38,7 @@ public:
 
     // Output Function
     void printInfo() const;
+    virtual void makeSound() const; // added by Garret
 };
 
 #endif
