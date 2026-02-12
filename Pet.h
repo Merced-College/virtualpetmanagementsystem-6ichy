@@ -4,27 +4,29 @@
 #include <string>
 #include <iostream>
 
+using namespace std
+
 class Pet {
 private:
-    std::string name;
-    std::string species;
+    string name;
+    string species;
     int age;
     int hungerLevel; // 0 (full) to 10 (starving)
 
 public:
     // Constructors
     Pet();
-    Pet(const std::string& name, const std::string& species, int age, int hungerLevel);
+    Pet(const string& name, const string& species, int age, int hungerLevel);
 
     // Accessors (Getters)
-    std::string getName() const;
-    std::string getSpecies() const;
+    string getName() const;
+    string getSpecies() const;
     int getAge() const;
     int getHungerLevel() const;
 
     // Mutators (Setters)
-    void setName(const std::string& name);
-    void setSpecies(const std::string& species);
+    void setName(const string& name);
+    void setSpecies(const string& species);
     void setAge(int age);
     void setHungerLevel(int level);
 
