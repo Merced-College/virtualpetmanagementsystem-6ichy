@@ -2,18 +2,18 @@
 using namespace std;
 
 // Define default constructor
-Dog::Dog() : Pet(), breed("Unknown") {}
+Dog::Dog() : Pet(), species("Unknown") {}
 
 // Define parameterized constructor
-Dog::Dog(const string& name, const string& breed, int age, int hungerLevel)
-    : Pet(name, "Dog", age, hungerLevel), breed(breed) {}
-// Accessor for breed
-string Dog::getBreed() const {
+Dog::Dog(const string& name, const string& species, int age, int hungerLevel)
+    : Pet(name, "Dog", age, hungerLevel), species(species) {}
+// Accessor for species
+string Dog::getSpecies() const {
     return breed;
 }
-// Mutator for breed
-void Dog::setBreed(const string& breed) {
-    this->breed = breed;
+// Mutator for species
+void Dog::setspecies(const string& species) {
+    this->species = species;
 }
 // Override makeSound
 void Dog::makeSound() const {   

@@ -8,15 +8,15 @@ using namespace std;
 
 class Cat : public Pet {
 private:
-    string breed;
+    string species;
 public:
     // Constructors
     Cat();
-    Cat(const string& name, const string& breed, int age, int hungerLevel);
+    Cat(const string& name, const string& species, int age, int hungerLevel);
     // Accessors
-    string getBreed() const;
+    string getSpecies() const;
     // Mutators
-    void setBreed(const string& breed);
+    void setSpecies(const string& species);
     // Override makeSound
     void makeSound() const override;
 };
